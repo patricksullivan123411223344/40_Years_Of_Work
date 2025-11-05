@@ -1,0 +1,9 @@
+Dependencies:
+- Plotly
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
+- Statsmodels
+- Jupyter (VS code extension)
+- python-dotenv
