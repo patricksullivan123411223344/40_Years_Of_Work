@@ -21,7 +21,7 @@ df = pd.DataFrame({ name: fred.get_series(code) for name, code in series.items()
 df.index = pd.to_datetime(df.index)
 df = df.loc["1980":"2025"] # Start and end years of data range
 
-raw_dir = Path("../data/raw")
+raw_dir = Path("../data/raw/fred")
 raw_dir.mkdir(parents=True, exist_ok=True)
 df.to_csv(raw_dir / "wages_productivity_data.csv")
 print("Saved →", raw_dir / "wages_productivity_data.csv")
